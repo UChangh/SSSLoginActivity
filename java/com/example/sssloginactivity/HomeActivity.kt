@@ -9,10 +9,10 @@ import kotlin.random.Random
 import kotlin.random.nextInt
 
 class HomeActivity : AppCompatActivity() {
-    val iconlist = listOf<String>("angrybirds", "avatar", "cat", "character", "duck", "ghost", "jigglypuff", "target")
+    private val iconlist = listOf("angrybirds", "avatar", "cat", "character", "duck", "ghost", "jigglypuff", "target")
 
-    lateinit var myIcon:ImageView
-    lateinit var main:Button
+    private lateinit var myIcon:ImageView
+    private lateinit var main:Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

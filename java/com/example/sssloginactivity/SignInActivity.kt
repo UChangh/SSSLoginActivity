@@ -66,9 +66,9 @@ class SignInActivity : AppCompatActivity() {
                         toast("Admin 계정 로그인 성공!")
                     } else if(datalist.any{ it.userid == id_text.text.toString() && it.userpw == pw_text.text.toString() && it.username.indexOf(it.userid) == it.username.indexOf(it.userpw)} ) {
                         i.putExtra("Name", datalist[datalist.indexOf(datalist.filter{ it -> it.userid == id_text.text.toString()}.first())].username)
-                        // datalist.filter => 유저 아이디와 입력된 아이디를 비교해 존재하는 아이디면 list에 넣고 first로 첫번째 원소를 반환
-                        // datalist.indexOf() => 반환받은 원소값의 인덱스를 찾음
-                        // datalist[].username => 받은 인덱스 값으로 username을 찾음
+//                         datalist.filter => 유저 아이디와 입력된 아이디를 비교해 존재하는 아이디면 list에 넣고 first로 첫번째 원소를 반환
+//                         datalist.indexOf() => 반환받은 원소값의 인덱스를 찾음
+//                         datalist[].username => 받은 인덱스 값으로 username을 찾음
                         i.putExtra("id", id_text.text.toString())
                         startActivity(i)
                         toast("로그인 성공!")
